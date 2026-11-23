@@ -1,0 +1,144 @@
+.stMainBlockContainer {
+    max-width: 45rem;
+    padding-top: clamp(3.25rem, 9vw, 6rem);
+    padding-bottom: 4rem;
+}
+
+[data-testid="stHeader"] {
+    background: #FFF9F6;
+}
+
+.st-key-masthead {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.st-key-masthead h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(2.6rem, 10vw, 4.65rem);
+    letter-spacing: -0.045em;
+    padding: 0;
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    background: #FBE4ED;
+    color: #A33D64;
+    font-size: 1.9rem;
+}
+
+.st-key-home-card,
+.st-key-question-card,
+.st-key-builder-card,
+.st-key-results-card,
+[class*="st-key-review-card-"] {
+    border-radius: 1.5rem;
+    background: #FFFEFC;
+    padding: clamp(1rem, 4vw, 1.75rem);
+}
+
+div[class*="st-key-"] h2,
+[data-testid="stHeading"] h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(1.55rem, 5vw, 2rem);
+}
+
+.topic-tag {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    background: #EEE7FA;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+
+.st-key-question-card [role="radiogroup"] {
+    gap: 0.65rem;
+}
+
+.st-key-question-card [data-testid="stRadio"] label {
+    width: 100%;
+    min-height: 3.25rem;
+    margin: 0;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid #E5CFD8;
+    border-radius: 0.95rem;
+    background: #FFFEFC;
+}
+
+.st-key-question-card [data-testid="stRadio"] label:has(input:checked) {
+    border-color: #A33D64;
+    background: #FBE4ED;
+}
+
+.st-key-question-card [data-testid="stRadio"] label:has(input:focus-visible) {
+    outline: 2px solid #A33D64;
+    outline-offset: 2px;
+}
+
+.stButton button {
+    min-height: 2.9rem;
+    padding-inline: 1.2rem;
+    border-radius: 0.85rem;
+}
+
+.results-score {
+    padding-block: 0.65rem 1rem;
+}
+
+.results-score .score {
+    color: #A33D64;
+    font-family: Georgia, serif;
+    font-size: clamp(4rem, 11vw, 6.5rem);
+    font-weight: 700;
+    letter-spacing: -0.055em;
+    line-height: 1;
+    margin: 0;
+}
+
+.results-score .score-detail {
+    font-size: 1.05rem;
+    color: #382634;
+    margin: 0.65rem 0 0;
+}
+
+.st-key-results-actions [data-testid="stHorizontalBlock"] {
+    gap: 0.75rem;
+    justify-content: flex-start;
+}
+
+.st-key-results-actions [data-testid="stColumn"] {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    .st-key-results-actions [data-testid="stHorizontalBlock"] {
+        flex-direction: column;
+    }
+
+    .st-key-results-actions [data-testid="stColumn"],
+    .st-key-results-actions .stButton button {
+        width: 100%;
+    }
+}
+
+.correct {
+    display: inline-block;
+    color: #204838;
+    background: #E5F5EB;
+    padding: 0.55rem 0.8rem;
+    border-radius: 0.8rem;
+    margin: 0;
+}
+
+.source-quote {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
